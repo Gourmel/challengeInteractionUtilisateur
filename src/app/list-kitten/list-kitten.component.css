@@ -1,0 +1,48 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+li div.details {
+  display: none;
+}
+
+li:hover div.details {
+  display: block;
+  position: absolute;
+  right: -50px;
+}
+
+.kittenList {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.list {
+  position: relative;
+}
+
+.adopt {
+  width: 20vw;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 8px;
+}
+
+img {
+  width: 100%;
+  margin-right: 3px;
+}
+
+button {
+  margin-top: 5px;
+  margin-bottom: 5px;
+
+}

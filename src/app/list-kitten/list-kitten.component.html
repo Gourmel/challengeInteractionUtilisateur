@@ -1,0 +1,21 @@
+<h1>Adopter un Chat</h1>
+
+<ul class="list">
+
+    <li class="kittenList" *ngFor="let cat of kittenData; let index= index">
+
+        <div class="adopt">
+            <img src={{cat.image}} alt="">
+            <button (click)="adoptKitten(index)">Adopter un Chatton </button>
+        </div>
+
+        <div class="details">
+            <p>{{cat.name}}</p>
+            <p>{{cat.race}}</p>
+            <p>{{cat.dateOfBirth}}</p>
+
+        </div>
+
+    </li>
+
+</ul>

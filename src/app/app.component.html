@@ -1,0 +1,9 @@
+<div class="lists">
+
+  <app-create-kitten class="div1" (dataCats)="sendToList($event)"></app-create-kitten>
+
+  <app-list-kitten class="div2" [kittenData]="toAdoptKitten" (adoptedKitten)="adoptKitten($event)"></app-list-kitten>
+
+  <app-user-kitten class="div3" [adoptData]="adoptedKittens"></app-user-kitten>
+
+</div>

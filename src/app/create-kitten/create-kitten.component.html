@@ -1,0 +1,21 @@
+
+<form (ngSubmit)="addKittenToApp()" [formGroup]="addCats">
+
+    <h1>Ajout de chaton à adopter</h1>
+  
+    <label for="name">Nom</label>
+    <input type="text" formControlName="name">
+  
+    <label for="race">Race</label>
+    <input type="text" formControlName="race">
+  
+    <label for="date">Date Anniversaire</label>
+    <input type="date" formControlName="date" class="date">
+  
+    <label for="image">URL Image</label>
+    <input type="text" formControlName="image">
+  
+  
+    <button type="submit" [disabled]="addCats.invalid">Ajouter chaton</button>
+  
+  </form>
